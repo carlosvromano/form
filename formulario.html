@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="formulario.css">
+    <title>Formulário - Lan Evo</title>
+</head>
+<body>
+    <div>
+        <h1 class="titulo">Recebimentos</h1>
+        <p class="subtitulo">Preencha o formulário de envio/ recebimento</p>
+        <br>
+        <form action="">
+            <fieldset class="group">
+                <div class="field">
+                    <label for="nomeEmpresa"><strong>Selecione sua empresa</strong></label>
+                    <select id="nomeEmpresa">
+                        <option selected desabled value="">Selecione</option>
+                        <option >Bailey Contábeis</option>
+                        <option >BNBB</option>
+                        <option >CHP</option>
+                        <option >Cultura Ingresa</option>
+                        <option >EADSkill</option>
+                        <option >JJ Calhas</option>
+                        <option >Lan Evo</option>
+                        <option >Maple Bear</option>
+                        <option >Marafon</option>
+                        <option >Sacoa</option>
+                        <option >Startec</option>
+                        <option >Tratorag</option>
+                    </select>
+                </div>
+            </fieldset>
+            <div class="field">
+                <label><strong>Você está:</strong></label>
+                <label >
+                    <input selected type="radio" name="processo" value="envio">Enviando
+                </label>
+                <label >
+                    <input type="radio" name="processo" value="recebimento">Recebendo
+                </label>
+            </div>
+            <!- dados do colaborador ->
+            <fieldset class="group">
+                <p class="subtitulo">Informações de contato</p>
+                <div class="field">
+                    <label for="nome"><strong>Nome</strong></label>
+                    <input type="text" name="nome" id="nome" required>
+                </div>
+                <div class="field">
+                    <label for="sobrenome"><strong>Sobrenome</strong></label>
+                    <input type="text" name="sobrenome" id="sobrenome" required>
+                </div>
+                 <div class="field">
+                    <label for="email"><strong>E-mail</strong></label>
+                    <input type="email" name="email" id="email" required>
+                </div>
+                <div class="field">
+                    <label for="celular"><strong>Celular</strong></label>
+                    <input type="tel" name="celular" id="celular" required>
+                </div>
+            </fieldset>
+            <!- dados do produto ->
+            <fieldset class="group">
+                <p class="subtitulo">Informações do equipamento</p>
+                <div class="field">
+                    <label for="nameEquipament"><strong>Qual é o equipamento</strong></label>
+                    <input type="text" name="nameEquipament" id="nameEquipament" required>
+                </div>
+                <div class="field">
+                    <label for="fileupload"><strong>Adicione fotos do equipamento enviado</strong></label>
+                    <input type="file">
+                </div>
+                <div class="field">
+                    <label for="description"><strong>Descrição do equipamento</strong></label>
+                    <textarea name="description" id="description"  rows="4"></textarea>
+                </div>
+            </fieldset>    
+            <fieldset class="group">
+                <p class="subtitulo">Endereço de envio/ recebimento</p>
+                <div class="field">
+                    <label for="cep"><strong>CEP</strong></label>
+                    <input type="text" name="cep" id="cep">
+                </div>
+                <div class="field">
+                    <label for="logradouro"><strong>Logradouro</strong></label>
+                    <input type="text" name="logradouro" id="logradouro" required>
+                </div>
+                <div class="field">
+                    <label for="number"><strong>Número</strong></label>
+                    <input type="number" required>
+                </div>
+                <div class="field">
+                    <label for="complement"><strong>Complemento</strong></label>
+                    <input type="text" name="complement" id="complement">
+                </div>
+                <div class="field">
+                    <label for="district"><strong>Bairro</strong></label>
+                    <input type="text" name="district" id="district" required>
+                </div>
+                <div class="field">
+                    <label for="city"><strong>Cidade</strong></label>
+                    <input type="text" name="city" id="city" required>
+                </div>
+                <div class="field">
+                    <label for="state"><strong>Estado</strong></label>
+                    <input type="text" name="state" id="state" required>
+                </div>
+            </fieldset>
+            <button class="button" type="submit">Enviar</button>
+        </form>
+    </div>
+</body>
+</html>
